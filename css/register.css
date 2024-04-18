@@ -1,0 +1,125 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cursive";
+}
+
+/* Body Styles */
+body {
+    background-color: #ffffff;
+    background-image: "logo.png";
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Container Styles */  
+.box-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    width: 90%;
+    max-width: 550px;
+    height: 90vh;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styles */
+.register-div {
+    text-align: center;
+    padding: 2rem;
+}
+
+.sub-title {
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.input-group input {
+    width: calc(50% - 0.5rem);
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input#age,
+.input-group input#address,
+.input-group input#username,
+.input-group input#password {
+    width: calc(100% - 0.5rem);
+}
+
+.input-group input#lastname {
+    margin-left: 0.5rem; 
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #76a0df;
+}
+
+/* Button Styles */
+.signup-btn {
+    width: 100%;
+    background-color: #e276f0;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn:hover {
+    background-color:  #e276f0;
+}
+
+/* Additional Styles */
+p {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+p .signin-btn{
+    color:  #e276f0;
+    text-decoration: none;
+}
+
+
+/* Keyframe Animations */
+@keyframes rotateAndFadeIn {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTitleAndFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+        margin-left: 2.5rem;
+    }
+}
